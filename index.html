@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meals App" />
+    <link rel="icon" href="./images/logo.png" />
+    <title>Yummy</title>
+    <!-- Google Fonts -->
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- Bootstrap styles  -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- Main Syle Sheet -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body class="bg-black overflow-visible">
+    <!-- Navbar -->
+
+    <nav class="navbar p-0 vh-100 position-fixed">
+      <div
+        class="d-flex flex-column vh-100 py-4 bg-white justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./images/logo.png"
+            alt="yummy logo"
+            width="50"
+            class="ms-2"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-bars pe-5 fs-1 bars"></i>
+          </span>
+        </button>
+        <div class="nav-end-icons d-flex flex-column">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes mt-1"></i>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="offcanvas offcanvas-start bg-black row justify-content-between g-0"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div
+        class="offcanvas-body pt-4 text-white d-flex justify-content-between flex-column col-10"
+      >
+        <ul class="navbar-nav flex-grow-1 pe-3 animated">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="search">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="categories">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="area"> Area </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="ingrediants"> Ingrediants </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="contact"> Contact Us </a>
+          </li>
+        </ul>
+        <div>
+          <div class="offcanvas-end-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div
+        class="appeared-navbar py-4 d-flex flex-column vh-100 bg-white justify-content-between align-items-center col-2"
+      >
+        <a class="navbar-brand" href="#"
+          ><img
+            src="./images/logo.png"
+            alt="yummy logo"
+            width="50"
+            class="ms-2"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa-solid fa-xmark close fs-1 pe-5"></i>
+          </span>
+        </button>
+        <div class="nav-end-icons d-flex flex-column">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes mt-1"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Main -->
+    <main>
+      <div class="row ps-5 py-4 search-inputs mx-auto"></div>
+
+      <div class="container">
+        <div class="row all-meals py-2 g-4 text-white"></div>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
